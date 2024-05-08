@@ -1,0 +1,37 @@
+cmMosquittoConf:
+  mosquittoConf: |-
+    listener 1883
+    persistence true
+    persistence_location /mosquitto/data
+    persistence_file mosquitto.db
+    autosave_interval 60
+    password_file /mosquitto/config/mosquitto.passwd
+    allow_anonymous false
+    connection bridge-edge
+    address 84.88.36.141:1883
+    topic # out 0 data/ edge-gw-3/
+    try_private true
+    remote_username i2cat
+    remote_password i2cati2cat
+  mosquittoPasswd: |-
+    i2cat:$7$101$F6hFChfy09N7kLXV$CSomurRLAllJyA01M8UHymFHxb/QezsddBVbegZImUF0kyoZVytWJKKuo6mFQwx7gydw1xq9h3mNZUIXtcrypA==
+    kentyou:$7$101$KqoU8kugFQmLrGeQ$o64IUw3t8lPsLAtx6RoozyiNfM3WlZnICwxfsdeKFj50/JjQgNsf5YfaVyuRsl8f1Gt7s9//w/0v7xF8tbH/Cg==
+    tma:$7$101$o8up58dw7gscVM1X$DrCgJtMHKPmrH3jlmtaElZhyTA3z5iRb7bghtgaAge7y8lRgtJBVgVr79OzwNzk0xkZHl16fpHCrQ27M0yHCww==
+kubernetesClusterDomain: cluster.local
+mqttBroker:
+  mqttBroker:
+    image:
+      repository: eclipse-mosquitto
+      tag: latest
+    imagePullPolicy: IfNotPresent
+  replicas: 1
+mqttBrokerService:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 1883
+  type: ClusterIP
+pvc:
+  pvcMqtt:
+    storageRequest: 200M

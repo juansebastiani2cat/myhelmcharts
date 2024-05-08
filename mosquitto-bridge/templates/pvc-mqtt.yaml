@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ include "mosquitto-bridge.fullname" . }}-pvc-mqtt
+  labels:
+  {{- include "mosquitto-bridge.labels" . | nindent 4 }}
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: {{ .Values.pvc.pvcMqtt.storageRequest | quote }}
