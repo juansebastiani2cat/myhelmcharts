@@ -3,12 +3,12 @@ entries:
   mosquitto-bridge:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2024-05-08T23:23:34.671319591+02:00"
+    created: "2024-05-09T22:05:18.159178875+02:00"
     description: A Helm chart for Kubernetes
-    digest: ecfbb986b4fffd6658751a1ec35a22da90395d80941c23ef6eb61a518a5da779
+    digest: 52b4ca08a9099bdbb60613b1a4d8712e160074551f2b8ed93c1ec6afbd5bd413
     name: mosquitto-bridge
     type: application
     urls:
-    - mosquitto-bridge-0.1.0.tgz
+    - https://juansebastiani2cat.github.io/myhelmcharts/mosquitto-bridge-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-08T23:23:34.670983326+02:00"
+generated: "2024-05-09T22:05:18.158683122+02:00"

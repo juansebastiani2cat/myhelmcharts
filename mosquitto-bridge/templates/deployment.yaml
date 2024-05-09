@@ -17,6 +17,8 @@ spec:
         app: mqtt-broker
       {{- include "mosquitto-bridge.selectorLabels" . | nindent 8 }}
     spec:
+      nodeSelector:
+        kubernetes.io/hostname: minikube-m02
       containers:
       - env:
         - name: KUBERNETES_CLUSTER_DOMAIN
