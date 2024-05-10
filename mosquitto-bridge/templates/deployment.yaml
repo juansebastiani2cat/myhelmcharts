@@ -17,8 +17,6 @@ spec:
         app: mqtt-broker
       {{- include "mosquitto-bridge.selectorLabels" . | nindent 8 }}
     spec:
-      nodeSelector:
-        nodeName: k8smaster.example.net
       containers:
       - env:
         - name: KUBERNETES_CLUSTER_DOMAIN
