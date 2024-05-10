@@ -1,3 +1,4 @@
+namespace: kochomasterchunk
 cmMosquittoConf:
   mosquittoConf: |-
     listener 1883
