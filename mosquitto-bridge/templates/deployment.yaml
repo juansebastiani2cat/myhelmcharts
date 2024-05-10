@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "mosquitto-bridge.fullname" . }}-mqtt-broker
+  namespace: kochomasterchunk
   labels:
     app: mqtt-broker
   {{- include "mosquitto-bridge.labels" . | nindent 4 }}
