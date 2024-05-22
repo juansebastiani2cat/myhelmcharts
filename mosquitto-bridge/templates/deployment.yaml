@@ -34,6 +34,13 @@ spec:
           name: config-file
         - mountPath: /mosquitto/data
           name: data-volume
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "100m"
+          limits:
+            memory: "2Gi"
+            cpu: "4"
       hostNetwork: true
       restartPolicy: Always
       securityContext:
