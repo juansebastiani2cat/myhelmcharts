@@ -23,6 +23,7 @@ mqttBroker:
     image:
       repository: eclipse-mosquitto
       tag: latest
+    nodeName: cognifog
     imagePullPolicy: IfNotPresent
   replicas: 1
 mqttBrokerService:

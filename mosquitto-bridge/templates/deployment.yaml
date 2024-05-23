@@ -17,6 +17,7 @@ spec:
         app: mqtt-broker
       {{- include "mosquitto-bridge.selectorLabels" . | nindent 8 }}
     spec:
+      nodeName: {{ .Values.nodeName }}
       containers:
       - env:
         - name: KUBERNETES_CLUSTER_DOMAIN
