@@ -1,14 +1,14 @@
 apiVersion: v1
 entries:
-  mosquitto-bridge:
+  naomi:
   - apiVersion: v2
-    appVersion: 0.1.0
-    created: "2024-05-23T15:22:57.155686861+02:00"
+    appVersion: 1.16.0
+    created: "2025-02-18T17:00:58.707970838+01:00"
     description: A Helm chart for Kubernetes
-    digest: 06da7f70e92354582a5c243f945b374f623e4b9d604dc4c96cc3abd812a3416b
-    name: mosquitto-bridge
+    digest: a9f292366c330ddc0f497f3e3d8ff708888dd12cad21e073a55ddd3161e4867d
+    name: naomi
     type: application
     urls:
-    - https://juansebastiani2cat.github.io/myhelmcharts/mosquitto-bridge-0.1.0.tgz
+    - naomi-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-23T15:22:57.147309493+02:00"
+generated: "2025-02-18T17:00:58.70743949+01:00"
