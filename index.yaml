@@ -1,14 +1,56 @@
 apiVersion: v1
 entries:
+  NAOMI:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2025-02-20T17:34:18.486425684+01:00"
+    dependencies:
+    - condition: mlflow.enabled
+      name: mlflow
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 1.5.0
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 14.7.7
+    - condition: flyte-binary.enabled
+      name: flyte-binary
+      repository: https://flyteorg.github.io/flyte
+      version: 1.13.1
+    - name: kuberay-operator
+      repository: https://ray-project.github.io/kuberay-helm/
+      version: 1.0.0-rc.0
+    - condition: kube-prometheus-stack.enabled
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 62.6.0
+    description: NAOMI Helm chart for Kubernetes
+    digest: 69fe727591c4a45701ce9b1de58d069c6e2e46d947a240f3403016a7ed730725
+    name: NAOMI
+    type: application
+    urls:
+    - naomi-0.1.0.tgz
+    version: 0.1.0
+  mosquitto-bridge:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2025-02-20T17:34:18.516418285+01:00"
+    description: A Helm chart for Kubernetes
+    digest: 06da7f70e92354582a5c243f945b374f623e4b9d604dc4c96cc3abd812a3416b
+    name: mosquitto-bridge
+    type: application
+    urls:
+    - myhelmcharts/mosquitto-bridge-0.1.0.tgz
+    version: 0.1.0
   naomi:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-18T17:00:58.707970838+01:00"
+    created: "2025-02-20T17:34:18.524398075+01:00"
     description: A Helm chart for Kubernetes
     digest: a9f292366c330ddc0f497f3e3d8ff708888dd12cad21e073a55ddd3161e4867d
     name: naomi
     type: application
     urls:
-    - naomi-0.1.0.tgz
+    - myhelmcharts/naomi-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-18T17:00:58.70743949+01:00"
+generated: "2025-02-20T17:34:18.433983419+01:00"
