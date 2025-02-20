@@ -1,9 +1,20 @@
 apiVersion: v1
 entries:
-  NAOMI:
+  mosquitto-bridge:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-02-20T17:34:18.486425684+01:00"
+    created: "2025-02-20T17:56:09.641946418+01:00"
+    description: A Helm chart for Kubernetes
+    digest: 06da7f70e92354582a5c243f945b374f623e4b9d604dc4c96cc3abd812a3416b
+    name: mosquitto-bridge
+    type: application
+    urls:
+    - mosquitto-bridge-0.1.0.tgz
+    version: 0.1.0
+  naomi:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2025-02-20T17:56:09.697940093+01:00"
     dependencies:
     - condition: mlflow.enabled
       name: mlflow
@@ -25,21 +36,10 @@ entries:
       repository: https://prometheus-community.github.io/helm-charts
       version: 62.6.0
     description: NAOMI Helm chart for Kubernetes
-    digest: 69fe727591c4a45701ce9b1de58d069c6e2e46d947a240f3403016a7ed730725
+    digest: c05d4183ecc54b4247db802c9aa9df78b2798f17680217577d52a2ab43ef0a2e
     name: naomi
     type: application
     urls:
     - naomi-0.1.0.tgz
     version: 0.1.0
-  mosquitto-bridge:
-  - apiVersion: v2
-    appVersion: 0.1.0
-    created: "2025-02-20T17:34:18.516418285+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 06da7f70e92354582a5c243f945b374f623e4b9d604dc4c96cc3abd812a3416b
-    name: mosquitto-bridge
-    type: application
-    urls:
-    - myhelmcharts/mosquitto-bridge-0.1.0.tgz
-    version: 0.1.0
-generated: "2025-02-20T17:34:18.433983419+01:00"
+generated: "2025-02-20T17:56:09.641527953+01:00"
