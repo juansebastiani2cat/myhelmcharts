@@ -26,7 +26,7 @@ entries:
       version: 62.6.0
     description: NAOMI Helm chart for Kubernetes
     digest: 69fe727591c4a45701ce9b1de58d069c6e2e46d947a240f3403016a7ed730725
-    name: NAOMI
+    name: naomi
     type: application
     urls:
     - naomi-0.1.0.tgz
@@ -41,16 +41,5 @@ entries:
     type: application
     urls:
     - myhelmcharts/mosquitto-bridge-0.1.0.tgz
-    version: 0.1.0
-  naomi:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-02-20T17:34:18.524398075+01:00"
-    description: A Helm chart for Kubernetes
-    digest: a9f292366c330ddc0f497f3e3d8ff708888dd12cad21e073a55ddd3161e4867d
-    name: naomi
-    type: application
-    urls:
-    - myhelmcharts/naomi-0.1.0.tgz
     version: 0.1.0
 generated: "2025-02-20T17:34:18.433983419+01:00"
